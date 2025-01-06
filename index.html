@@ -1,0 +1,403 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation de TaskMate</title>
+    <meta name="description" content="Documentation de TaskMate, une application MERN pour la gestion des tâches">
+    <meta name="author" content="TaskMate Team">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="navbar clear nav-top">
+        <div class="row content">
+            <a href="#"><img class="logo" src="logo.png" alt="TaskMate Logo"></a>
+            <a class="right" style="text-decoration: underline;" href="#"><i
+                    class="fas fa-book"></i>&nbsp;Documentation</a>
+            <a class="right" href="mailto:mrbenboyy@gmail.com" target="_blank"><i
+                    class="fas fa-paper-plane"></i>&nbsp;support@taskmate.com</a>
+        </div>
+    </div>
+
+    <div class="container clear">
+        <div class="row wrapper">
+
+            <div class="sidepanel">
+
+                <a class="title" href="#">Introduction</a>
+                <a class="section" href="#">Versions Supportées</a>
+                <a class="section" href="#">À propos de TaskMate</a>
+                <a class="section" href="#technology">Technologie</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#gettingstarted">Démarrer</a>
+                <a class="section" href="#installingapp">Installation de l'application</a>
+                <a class="section" href="#runningapp">Exécution de l'application</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#Interfaces">Interfaces de TaskMate</a>
+                <a class="section" href="#home_page">Page d'accueil</a>
+                <a class="section" href="#login_page">Page d'authentification</a>
+                <a class="section" href="#dashboard_page">Page tableau de bord</a>
+                <a class="section" href="#profile_page">Page profil</a>
+                <a class="section" href="#about_page">Page à propos</a>
+                <a class="section" href="#contact_page">Page contactz-nous</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#basicfeatures">Fonctionnalités de Base</a>
+                <a class="section" href="#feature1">Gestion des Tâches</a>
+                <a class="section" href="#feature2">Utilisation du Chatbot</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#advanced">Fonctionnalités Avancées</a>
+                <a class="section" href="#api">API</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#moreinfo">Plus d'Informations</a>
+
+                <div class="space double"></div>
+
+            </div>
+
+            <div class="right-col">
+
+                <h1>Introduction</h1>
+
+                <p>TaskMate est une application de gestion de tâches moderne, construite sur le stack MERN (MongoDB,
+                    Express.js, React, Node.js). Elle permet aux utilisateurs de créer un compte, se connecter et gérer
+                    leurs tâches efficacement.</p>
+
+                <p>TaskMate offre deux méthodes pour gérer les tâches : manuellement via l'interface utilisateur ou
+                    automatiquement grâce à un chatbot intégré, qui facilite l'organisation des tâches.</p>
+
+                <h2>Versions Supportées :</h2>
+                <p><b>Version 1.0.0</b> : Première version stable de l'application, permettant l'inscription, la
+                    connexion et la gestion des tâches.</p>
+
+                <h2 id="technology">À propos de TaskMate</h2>
+                <p>TaskMate est conçu pour offrir une solution intuitive et flexible pour la gestion des
+                    tâches quotidiennes. Vous pouvez créer des tâches, les organiser et les suivre directement depuis
+                    votre tableau de bord. Le chatbot intégré facilite la gestion des tâches de manière plus fluide.</p>
+
+                <h2>Technologie</h2>
+                <p>TaskMate utilise le stack MERN, composé de :</p>
+                <ul>
+                    <li><b>MongoDB</b> : Base de données NoSQL pour stocker les informations des utilisateurs et des
+                        tâches.</li>
+                    <li><b>Express.js</b> : Framework backend pour la création des API RESTful.</li>
+                    <li><b>React</b> : Framework frontend pour créer une interface utilisateur moderne et dynamique.
+                    </li>
+                    <li id="installingapp"><b>Node.js</b> : Environnement d'exécution pour le serveur backend.</li>
+                </ul>
+                <div id="gettingstarted" class="divider" style="width:24%; margin:30px 0;"></div>
+                <h2>Démarrer</h2>
+
+
+                <h1>Comment démarrer</h1>
+
+                <h2>Installation de l'application</h2>
+
+                <p>Pour installer TaskMate, suivez ces étapes :</p>
+
+                <ol>
+                    <li>Clonez le dépôt GitHub de TaskMate :<br />
+                        <code>https://github.com/mrbenboyy/chatbot-task-manager-frontend.git</code><br />
+                        <code>https://github.com/mrbenboyy/chatbot-task-manager-backend.git</code>
+                    </li>
+                    <br>
+                    <li id="runningapp">Installez les dépendances avec <code>npm install</code> dans les répertoires
+                        <b>backend</b> et
+                        <b>frontend</b>.
+                    </li>
+                    <br>
+                    <li>Créez un fichier <code>.env</code> pour configurer les variables nécessaires comme la connexion
+                        à MongoDB et le port du serveur.</li>
+                    <br>
+                    <li>Lancez le serveur backend avec <code>npm start</code>, puis le frontend avec
+                        <code>npm start</code>.
+                    </li>
+                </ol>
+
+                <h2>Exécution de l'application</h2>
+
+                <p>Une fois l'application installée, vous pouvez la lancer en accédant aux URLs suivantes :</p>
+                <ul>
+                    <li><code>http://localhost:3000</code> pour le frontend.</li>
+                    <li><code>http://localhost:5050</code> pour l'API backend.</li>
+                </ul>
+                <p>Vous pourrez alors créer un compte, vous connecter et commencer à ajouter des tâches.</p>
+
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+                <h1 id="Interfaces">Interfaces de TaskMate</h1>
+
+                <p>Voici un aperçu des différentes interfaces de TaskMate, qui permet à l'utilisateur de naviguer
+                    facilement et de gérer ses tâches efficacement.</p>
+
+                <h2 id="home_page">1. Page d'Accueil (Home)</h2>
+                <p>La page d'accueil présente un guide sur le fonctionnement du site. Si l'utilisateur est connecté, la
+                    page est dynamique et affiche les actualités récentes récupérées via l'API News.</p>
+                <img src="home_page.PNG" alt="Page d'Accueil" class="interface-image">
+                <p>Si l'utilisateur est connecté</p>
+                <img src="home_page_user_connected.PNG" alt="Page d'Accueil" class="interface-image">
+                <h2 id="login_page">2. Page de Connexion (Login)</h2>
+                <p>La page de connexion permet aux utilisateurs d'accéder à leur compte en entrant leur adresse email et
+                    leur mot de passe.</p>
+                <img src="login.PNG" alt="Page de Connexion" class="interface-image">
+
+                <h2>3. Page d'Inscription (Signup)</h2>
+                <p>La page d'inscription permet à de nouveaux utilisateurs de créer un compte en fournissant leur nom,
+                    email mot de passe et photo de profil.</p>
+                <img src="signup.PNG" alt="Page d'Inscription" class="interface-image">
+
+                <h2 id="dashboard_page">4. Tableau de Bord (Dashboard)</h2>
+                <p>Le tableau de bord permet de gérer les tâches avec une vue d'ensemble des tâches et des statistiques
+                    sur leur progression. Une petite icône du chatbot est disponible pour discuter et gérer les tâches
+                    via des commandes ou des conversations normales.</p>
+                <img src="dashboard_page.PNG" alt="Tableau de Bord" class="interface-image">
+
+                <h2 id="profile_page">5. Page Profil</h2>
+                <p>Sur la page profil, les utilisateurs peuvent modifier leurs informations personnelles, comme leur nom
+                    et leur mot de passe.</p>
+                <img src="profile_page.PNG" alt="Page Profil" class="interface-image">
+
+                <h2 id="about_page">6. Page À Propos</h2>
+                <p>La page "À propos" fournit des informations sur l'équipe de développement et les objectifs de
+                    TaskMate.</p>
+                <img src="about_page.PNG" alt="Page À Propos" class="interface-image">
+
+                <h2 id="contact_page">7. Page Contactez Nous</h2>
+                <p>La page "Contactez Nous" permet aux utilisateurs de contacter l'équipe de support via un formulaire
+                    ou par email.</p>
+                <img id="feature1" src="contact_page.PNG" alt="Page Contactez Nous" class="interface-image">
+
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+                <h1>Fonctionnalités de Base</h1>
+
+                <h2 id="feature2">Gestion des Tâches</h2>
+
+                <p>TaskMate vous permet de créer, organiser et suivre vos tâches de manière simple. Vous pouvez ajouter
+                    des tâches manuellement via l'interface ou utiliser le chatbot intégré pour les ajouter rapidement.
+                </p>
+
+                <h2>Utilisation du Chatbot</h2>
+
+                <p id="api">Le chatbot de TaskMate facilite la gestion des tâches par simple conversation. Il vous
+                    permet
+                    d'ajouter, marquer comme complètes et supprimer des tâches en répondant simplement aux questions
+                    posées.</p>
+
+                <h2 id="api-email">Envoi de Notifications par E-mail</h2>
+
+                <p>TaskMate envoie des notifications par e-mail en utilisant un service d'envoi d'e-mails Brevo. Ces
+                    notifications
+                    sont envoyées aux utilisateurs pour les informer des tâches proches de leur échéance ou en retard.
+                </p>
+                <img src="email.PNG" alt="email" class="interface-image">
+
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+
+                <h1>Fonctionnalités Avancées</h1>
+
+                <h1>API</h1>
+
+                <h2>1. Gestion des utilisateurs</h2>
+                <h3>1.1. Inscription</h3>
+                <p>URL : <code>http://localhost:5050/api/users/register</code></p>
+                <p>Méthode : <b>POST</b></p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "123456"
+}
+                </pre>
+
+                <h3>1.2. Connexion</h3>
+                <p>URL : <code>http://localhost:5050/api/users/login</code></p>
+                <p>Méthode : <b>POST</b></p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "email": "johndoe@example.com",
+  "password": "123456"
+}
+                </pre>
+
+                <h2>2. Gestion des tâches</h2>
+                <h3>2.1. Ajouter une tâche</h3>
+                <p>URL : <code>http://localhost:5050/api/tasks</code></p>
+                <p>Méthode : <b>POST</b></p>
+                <p>Headers :</p>
+                <pre>
+{
+  "Authorization": "Bearer <ton_token>"
+}
+                </pre>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "title": "Acheter des courses",
+  "description": "Acheter du lait, des œufs et du pain.",
+  "dueDate": "2024-12-31",
+  "priority": "High"
+}
+                </pre>
+
+                <h3>2.2. Obtenir toutes les tâches</h3>
+                <p>URL : <code>http://localhost:5050/api/tasks</code></p>
+                <p>Méthode : <b>GET</b></p>
+
+                <h3>2.3. Obtenir les détails d'une tâche</h3>
+                <p>URL : <code>http://localhost:5050/api/tasks/:id<id_tâche></code></p>
+                <p>Méthode : <b>GET</b></p>
+
+                <h3>2.4. Modifier une tâche</h3>
+                <p>URL : <code>http://localhost:5050/api/tasks/:id<id_tâche></code></p>
+                <p>Méthode : <b>PUT</b></p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "title": "Acheter des fournitures",
+  "description": "Acheter des stylos et des cahiers.",
+  "priority": "Medium",
+  "status": "Ongoing"
+}
+                </pre>
+
+                <h3>2.5. Supprimer une tâche</h3>
+                <p>URL : <code>http://localhost:5050/api/tasks/:id<id_tâche></code></p>
+                <p>Méthode : <b>DELETE</b></p>
+
+                <h3>2.6. Supprimer les tâches complétées</h3>
+                <p>URL : <code>http://localhost:5050/api/tasks/completed</code></p>
+                <p>Méthode : <b>DELETE</b></p>
+
+                <h2>3. Chatbot</h2>
+                <p>Testez le chatbot pour gérer vos tâches.</p>
+
+                <h3>Ajouter une tâche</h3>
+                <p>URL : <code>POST http://localhost:5050/api/chatbot</code></p>
+                <p>Headers : Ajoutez un token JWT valide dans les headers <code>Authorization</code> comme Bearer
+                    <b>your_jwt_token_here</b>
+                </p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "message": "Ajoute une tâche Réviser pour l'examen avec une priorité faible"
+}
+                </pre>
+                <pre>
+                    {
+                      "message": "demain je vais jouer un match tennis; ajoute cette tâche"
+                    }
+                                    </pre>
+
+                <!-- Chatbot : Modifier une tâche -->
+                <h3>Modifier une tâche</h3>
+                <p>URL : <code>POST http://localhost:5050/api/chatbot</code></p>
+                <p>Headers : Ajoutez un token JWT valide dans les headers <code>Authorization</code> comme Bearer
+                    <b>your_jwt_token_here</b>
+                </p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "message": "Modifie la description de la tâche jouer football avec Match amical dimanche.
+}
+</pre>
+
+                <h3>Modifier la priorité d'une tâche</h3>
+                <p>URL : <code>POST http://localhost:5050/api/chatbot</code></p>
+                <p>Headers : Ajoutez un token JWT valide dans les headers <code>Authorization</code> comme Bearer
+                    <b>your_jwt_token_here</b>
+                </p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "message": "Modifie la tâche Jouer football en ajoutant une priorité élevée."
+}
+</pre>
+
+                <h3>Modifier la date d'échéance d'une tâche</h3>
+                <p>URL : <code>POST http://localhost:5050/api/chatbot</code></p>
+                <p>Headers : Ajoutez un token JWT valide dans les headers <code>Authorization</code> comme Bearer
+                    <b>your_jwt_token_here</b>
+                </p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "message": "Modifie la tâche date d'échéance de la tache jouer football en ajoutant une date d'échéance : 2024-01-10."
+}
+</pre>
+
+                <h3>Modifier le statut d'une tâche</h3>
+                <p>URL : <code>POST http://localhost:5050/api/chatbot</code></p>
+                <p>Headers : Ajoutez un token JWT valide dans les headers <code>Authorization</code> comme Bearer
+                    <b>your_jwt_token_here</b>
+                </p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "message": "Modifie la tâche 'Jouer football' en ajoutant un statut : Completed."
+}
+</pre>
+
+                <h3>Supprimer une tâche</h3>
+                <p>URL : <code>POST http://localhost:5050/api/chatbot</code></p>
+                <p>Headers : Ajoutez un token JWT valide dans les headers <code>Authorization</code> comme Bearer
+                    <b>your_jwt_token_here</b>
+                </p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "message": "Supprime la tâche réviser pour l'examen."
+}
+</pre>
+                <h3>Supprimer les tâches complétées</h3>
+                <p>URL : <code>POST http://localhost:5050/api/chatbot</code></p>
+                <p>Headers : Ajoutez un token JWT valide dans les headers <code>Authorization</code> comme Bearer
+                    <b>your_jwt_token_here</b>
+                </p>
+                <p>Body (JSON) :</p>
+                <pre>
+{
+  "message": "Supprime les tâches complétées"
+}
+</pre>
+
+
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+                <h1>Plus d'Informations</h1>
+
+                <p>Pour toute question ou demande d'assistance, vous pouvez consulter notre <a
+                        href="https://taskmate.com/faq" target="_blank">FAQ</a> ou nous contacter à <a
+                        href="mailto:mrbenboyy@gmail.com">support@taskmate.com</a>.</p>
+
+                <div class="doublespace"></div>
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
